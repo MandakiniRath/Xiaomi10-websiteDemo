@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("pbg.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+header {
+    background-color: #08473894;
+    padding: 10px;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+    color:  #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 16px;
+    color:  #ffffff;
+}
+
+.contact-details span {
+    margin-bottom: 5px;
+}
+
+main {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+   background-color: #46726668;
+    opacity: 100;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.035); /* Semi-transparent background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head  {
+    font-size: 80px;
+    font-weight: bold;
+    color:  #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    margin-bottom: 0px;
+}
+.welcome-text {
+    font-size: 40px;
+    font-weight: lighter;
+    color:  #ffffff;
+    font-style: italic;
+    font-family:'Lucida Handwriting', cursive;
+    margin-top: 2px;
+    
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.text {
+    height: 50vh;
+    width: 40vw;
+   /* border: 3px solid #1f251e;*/
+    margin: 5px 15px;
+    padding: 0px 25px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: larger;
+    line-height: 1.3;
+}
+
+.image {
+    height: 50vh;
+    width: 40vw;
+    margin: 20px;
+    border: 3px solid #59a483;
+    border-radius: 10px;
+    overflow:hidden;
+}
+
+.image img {
+    height: 50vh;
+    width: 45vw;
+}
+section {
+    display: flex;
+}
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+iframe {
+    border: 3px solid #000000;
+    border-radius: 10px;
+}
+
+#contact{
+    color: whitesmoke;
+    padding: 10px 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#name,#mail,#genres{
+    margin: 15px;
+    height: 25px;
+    width: 20rem;
+    background-color: hsla(177, 57%, 46%, 0.766);
+    border: 3px solid #69c8b9cf;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+#msg{
+    height: 20px;
+    margin-top: 15px;
+    width: 20px;
+    margin-right: 50px;
+}
+
+input[type=button]{
+    margin: 25px 140px;
+    height: 30px;
+    width: 150px;
+    background-color: #107d6d;
+    border: 3px solid #1a8f85;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+label{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #05211d7d;
+    padding: 10px;
+    text-align: start;
+    font-size: 12px;
+}
+.text2 {
+    font-size: 15px;
+    font-weight: bold;
+    color:  #ffffff;
+    text-decoration: underline;
+}

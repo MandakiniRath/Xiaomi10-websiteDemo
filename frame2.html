@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaomi</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="miLogo.png" alt="Logo" class="logo">
+            <a href="index1.html"><span class="site-name">Xiaomi 14</span></a>
+            </div>
+                <div>
+                    <a href="index1.html"></a>
+                </div>
+                <a href="mailto:manu@xiaomi.com"><div class="site-name">CONTACT US</div></a>
+        </div>
+    </header>
+    
+    <div class="para">
+        <p>The Xiaomi 14 arrives in a single 12GB + 512GB memory configuration in India. It is priced at ₹69,999 (~$845) in the region.
+             The handset is offered in three colors, namely Black, White, and Jade Green.
+            The product can be purchased from Mi.com, Amazon, Flipkart, Xiaomi Home stores, and partner retail stores.
+            Buyers can avail of a ₹5,000 (~$60) instant discount on credit cards issued by ICICI Bank and HDFC Bank. They can also get a  ₹5,000 (~$60) exchange bonus on select devices.
+             Those interested in installments can also make use of up to 24-month no-cost EMI plans on various credit cards. 
+            Further, customers get one free screen replacement within 6 months of the purchase date. They also get one free out-of-warranty repair (including labor cost) within a year from purchase. There’s also a free 3-month YouTube Premium subscription for new users.
+            Finally, buyers get access to Xiaomi Priority Club. This membership gives them free priority pick-up and drop, a guaranteed 2-hour repair turnaround time or a standby device, a half-yearly phone check-up, and priority customer support (dedicated manager).</p>
+    </div>
+    <div id="contact">
+        <form action="javascript:submitForm()" onsubmit="return validate()"> 
+            <label for="name">NAME</label>
+            <input type="text" name="name" id="name" required><br>
+            <label for="mail">EMAIL</label>
+            <input type="email" name="mail" id="mail" required><br>
+            <label for="genre">GENRE</label>
+            <input list="genre" name="genres" id="genres" required>
+            <datalist id="genre">
+                <option value="Black">
+                <option value="White">
+                <option value="Jade Green">
+            </datalist><br>
+            <input type="checkbox" name="msg" id="msg">
+            <label for="msg">SUBSCRIBE TO US VIA EMAIL</label><br>
+            <input type="submit" value="SUBMIT">
+        </form>
+        <script>
+            function validate() {
+                let name = document.getElementById("name")
+                let email = document.getElementById("email")
+                if(name.value.length < 10) {
+                  window.alert("Name must be greater than 10 character");
+                  return false;
+                } 
+                else {
+                  return true;
+                }
+            }
+            function submitForm() {
+                window.alert("Form Submitted")
+              }
+            </script>
+    </div>
+
+    <footer>
+        <p><b>&copy;2010-2024 Xiaomi. All Rights Reserved</b></p>
+    </footer>
+</body>
+
+</html>
